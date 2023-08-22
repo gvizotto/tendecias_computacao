@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Básico</title>
+</head>
+<body>
+    <fieldset>
+        <form action="">
+            <div>
+                <label for="nome">Nome:</label>
+             <input type="text" id="nome" required>
+            </div>
+            
+            <div>
+                <label for="data_nascimento">Data de Nascimento:</label>
+             <input type="date" id="data_nascimento" required>
+            </div>
+            
+            <div>
+                <label for="email">Email:</label>
+             <input type="email" id="email" required>
+            </div>
+            
+            <div>
+                <label for="telefone">Telefone:</label>
+             <input type="number" id="telefone" required>
+            </div>
+            <div>
+            <label for="sexo">Sexo:</label>
+            <select name="sexo" id="sexo" required>
+                <option selected disabled>Selecione...</option>
+                <option value="homemcis">Homem Cisgênero</option>
+                <option value="mulhercis">Mulher Cisgênero</option>
+                <option value="homemtrans">Homem Transgênero</option>
+                <option value="mulhertrans">Mulher Transgênero</option>
+                <option value="naodefinido">Não Definido</option>
+            </select>
+            </div>
+
+            <div>
+            <p>Em qual zona reside?</p>
+
+            <div>
+                <input type="radio" id="norte" name="zona">
+                <label for="norte">Norte</label>
+            </div>
+            <div>
+                <input type="radio" id="sul" name="zona">
+                <label for="sul">Sul</label>
+            </div>
+            <div>
+                <input type="radio" id="leste" name="zona">
+                <label for="leste">Leste</label>
+            </div>
+            <div>
+                <input type="radio" id="oeste" name="zona">
+                <label for="oeste">Oeste</label>
+            </div>
+        </div>
+
+         <button>Enviar</button>
+    
+        </form>
+    </fieldset>    
+</body>
+</html>
